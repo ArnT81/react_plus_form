@@ -1,0 +1,22 @@
+.form {
+	width: fit-content;
+	background: #339999;
+	display: grid;
+	gap: var(--spacing);
+	padding: var(--spacing);
+	border-radius: 4px;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+	width: fit-content;
+	padding: calc(var(--spacing)/2) var(--spacing);
+}
+
+.buttoncontainer {
+	justify-content: flex-end;
+	display: flex;
+	gap: var(--spacing);
+	margin-top: var(--spacing);
+}
