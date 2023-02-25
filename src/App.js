@@ -106,20 +106,18 @@ export default function App() {
           onInvalid={customValidation}
           pattern="\w{3,16}"
         />
-        <div data-validate='mongo'>
-          <Input
-            required
-            type='password'
-            label='Upprepa lösenord'
-            name='confirmPassword'
-            placeholder='*******'
-            value={value.confirmPassword}
-            onChange={handleChange}
-            onInvalid={customValidation}
-            passwordsMatch={passwordsMatch}
-            pattern="\w{3,16}"
-          />
-        </div>
+        <Input
+          required
+          type='password'
+          label='Upprepa lösenord'
+          name='confirmPassword'
+          placeholder='*******'
+          value={value.confirmPassword}
+          onChange={handleChange}
+          onInvalid={customValidation}
+          passwordsMatch={passwordsMatch}
+          pattern="\w{3,16}"
+        />
       </Form>
     </div>
   );
